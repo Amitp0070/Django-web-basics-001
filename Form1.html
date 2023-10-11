@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms in HTML</title>
+</head>
+<body>
+    <form method="post" enctype="multipart/form-data">
+        <input type="text" name="username" id="username" placeholder="Username"
+        required maxlength="20" size="25" pattern="[A-Za-z0-9]+">
+        <br>
+        <input type="email" name="email" id="email" placeholder="Email">
+        <br>
+        <input type="tel" name="phone" id="phone" placeholder="Phone">
+        <br> 
+        <input type="date" name="dob" id="dob" >
+        <br>
+        <input type="datetime-local" name="admissiondate" id="admitdate">
+        <br>
+        <input type="file" name="avatar" id="avatar">
+        <br>
+        <input type="checkbox" name="agree" id="agree">Do you agree
+        <br>
+        <p>Your fav fruit</p>
+        <input type="radio" name="ff" id="ff1" value="apple">Apple
+        <br>
+        <input type="radio" name="ff" id="ff2" value="mango">Mango
+        <br>
+        <input type="radio" name="ff" id="ff3" value="pineapal">Pineapal  
+        <br>
+        <p>Kitna pdhe ho?</p>
+        <select name="edu" id="edu">
+            <option value="Graduate">Graduate</option>
+            <option value="Post-graduate">Post-graduate</option>
+            <option value="Inter-midiate">Inter-midiate</option>
+            <option value="High school">High school</option>
+        </select>
+        <br>
+        <p>Rate your skill</p>
+        <input type="range" name="ratting" id="ratting">
+        <br>
+        <input type="hidden" name="secret" id="kuch raaz h isme">
+        <input type="submit" value="send">
+        </form>
+</body>
+</html>
