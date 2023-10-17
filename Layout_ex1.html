@@ -20,7 +20,7 @@
             line-height: 1.5;
         }
         header{
-            background-color: brown;
+            background-color: white; 
             padding: 1.5rem;
         }
         /* nav{
@@ -32,22 +32,50 @@
             gap: 2rem;
         }
         .nav-list a{
-            color: white;
+            color: red;
             text-decoration: none;
             font-size: 1.2rem;
+            font-weight: bold;
         }
         .nav-list a:hover{
             color: yellow;
         }
         main{
             min-height: 30vh;
-            background-color: rgba(5, 246, 150, 0.519);
+            /* background-color: rgba(5, 246, 150, 0.519);  */
+            width: min(70ch, 90%);
+            /* color: black; */
+            margin-inline: auto;
         }
         .hero-heading{
-            font-size: 6rem;
+            /* color: black;  */
+            font-size: 5rem;
             line-height: 1.1;
             margin-bottom: 4rem;
-            margin-left: 1rem;
+            /* margin-left: 1rem; */
+        }
+        .text{
+            font-size: 1.25rem;
+            text-align: justify;
+            margin-bottom: 1.15rem;
+        }
+        .item-list > * {
+            list-style-image: url('static/images/arrow.png');
+            margin-left: 1.15rem;
+            padding: .25rem  ;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .item-list{
+            margin-bottom: 1rem;
+        }
+        footer{
+            background-color: white;
+            display: flex;
+            padding: 1rem;
+            justify-content: center;
+            color: red;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -66,16 +94,21 @@
         <section>
             <article>
                 <h2 class="hero-heading">Welcome to layouts in CSS</h2>
-                <p>
-                    Today we are going to see example of layouts in CSS
+                <p class="text">
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum assumenda possimus asperiores dolorum ipsa vel minus, sed,
+                    provident similique ducimus expedita at eveniet molestias unde? Aperiam doloremque voluptatibus dignissimos ducimus officia ea,
+                     similique pariatur iure doloribus! Dolorum ipsum totam delectus quaerat? Delectus quasi omnis voluptas, atque corporis impedit quis quae, 
+                     distinctio nihil tempore dolorem, officia est? Ipsa consequatur sequi explicabo consectetur et nihil aliquam rerum dolore odio, impedit, 
+                     vitae reiciendis tempore illum, ex nostrum nam quidem pariatur deserunt quod numquam? Dicta harum voluptates, 
+                   nisi molestias facilis iste aut deleniti sed voluptatibus enim aspernatur praesentium accusamus totam veritatis, alias perspiciatis fugit.
                 </p>
-                <ul>
+                <ul class="item-list">
                     <li>Grids</li>
                     <li>Flexbox</li>
                     <li>Mixing both togather</li>
                 </ul>
-                <p>
-                    This is very useful creating layout
+                <p class="text">
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus non maiores, reiciendis molestiae quos sed. Ipsa dolore architecto facere ipsam distinctio, illum labore tenetur deleniti suscipit dolorem odio dolores qui obcaecati cum, eos cupiditate rerum hic totam repudiandae aliquam nemo error aut asperiores ex. Placeat magnam sit obcaecati iste tempore!
                 </p>
             </article>
         </section>
